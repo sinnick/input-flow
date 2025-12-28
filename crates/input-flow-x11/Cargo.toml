@@ -1,0 +1,14 @@
+[package]
+name = "input-flow-x11"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+input-flow-backend = { path = "../input-flow-backend" }
+
+x11rb = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }

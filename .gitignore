@@ -1,0 +1,33 @@
+# Rust
+/target
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Config
+*.toml.bak
+
+# Logs
+*.log
+
+# Build artifacts
+/dist
+/build
+
+# GUI (Tauri/Node)
+gui/node_modules/
+gui/dist/
+gui/target/
+gui/.svelte-kit/
+
+# OS
+.DS_Store
+Thumbs.db

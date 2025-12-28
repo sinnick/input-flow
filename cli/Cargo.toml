@@ -1,0 +1,17 @@
+[package]
+name = "input-flow-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "input-flow"
+path = "src/main.rs"
+
+[dependencies]
+input-flow-core = { path = "../crates/input-flow-core" }
+
+clap = { workspace = true }
+tokio = { workspace = true }
+anyhow = { workspace = true }

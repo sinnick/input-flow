@@ -1,0 +1,44 @@
+[workspace]
+members = [
+    "crates/input-flow-core",
+    "crates/input-flow-backend",
+    "crates/input-flow-x11",
+    "crates/input-flow-daemon",
+    "cli",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Input Flow Contributors"]
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+# Async runtime
+tokio = { version = "1.35", features = ["full"] }
+
+# QUIC protocol
+quinn = "0.11"
+rustls = "0.22"
+rcgen = "0.12"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+bincode = "1.3"
+toml = "0.8"
+
+# mDNS discovery
+mdns-sd = "0.11"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+anyhow = "1.0"
+thiserror = "1.0"
+
+# CLI
+clap = { version = "4.4", features = ["derive"] }
+
+# X11 (Linux only)
+x11rb = "0.13"

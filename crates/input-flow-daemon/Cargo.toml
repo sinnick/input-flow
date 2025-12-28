@@ -1,0 +1,20 @@
+[package]
+name = "input-flow-daemon"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "input-flow-daemon"
+path = "src/main.rs"
+
+[dependencies]
+input-flow-core = { path = "../input-flow-core" }
+input-flow-backend = { path = "../input-flow-backend" }
+input-flow-x11 = { path = "../input-flow-x11" }
+
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
